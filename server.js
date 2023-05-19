@@ -43,6 +43,6 @@ app.use((error,req,res,next)=>{
 })
 
 
-app.listen(port , ()=>{
+app.listen(process.env.PORT , ()=>{
     console.log(`Port Startd and Working on Port : ${process.env.PORT}`)
 })
