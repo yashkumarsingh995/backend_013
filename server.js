@@ -2,12 +2,14 @@
 const express = require('express');
 // importing the cros
 const cors = require('cors');
+// importing the dotenv
+require("dotenv").config();
 // crreating the app 
 const app = express();
 app.use(express.json());
 app.use(cors());
 // Defining the Port
-const port = 5000
+
 // Defining the apiRoutes ( backend/routes/apiRoutes.js)
 const apiRoutes = require("./routes/apiRoutes");
 
@@ -42,5 +44,5 @@ app.use((error,req,res,next)=>{
 
 
 app.listen(port , ()=>{
-    console.log(`Port Startd and Working on Port : ${port}`)
+    console.log(`Port Startd and Working on Port : ${process.env.PORT}`)
 })
