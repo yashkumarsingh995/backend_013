@@ -1,0 +1,10 @@
+Backend/server.js :
+     
+// middlewares 
+// We have to use the third arguemet "next" for the next middleware after the app.use() middleware
+
+// Url which are folowed by /api is gonna handled by apiRoutes
+
+
+// Mongo Username : clientirshad001 
+// Mongo Password : J8XD6yW0jNqCGwNj
